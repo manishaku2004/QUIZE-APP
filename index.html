@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="box">
+        <h2 id="quebox">1) this is a question ..</h2>
+        <div id="option">
+        <input type="radio" name="op" id="option1" value="a" class="input_op">
+        <label for="option1">option1</label>
+    </div>
+    <div id="option">
+        <input type="radio" name="op" id="option2" value="b" class="input_op">
+        <label for="option2">option2</label>
+    </div>
+        <div id="option">
+        <input type="radio" name="op" id="option3" value="c" class="input_op">
+        <label for="option3">option3</label>
+    </div>
+        <div id="option">
+        <input type="radio" name="op" id="option4" value="d" class="input_op">
+        <label for="option4">option4</label>
+    </div>
+    
+       
+        <div id="nav-buttons">
+            <button id="prev-btn"  class="btnstyle" onclick="prevQuestion()">Back</button>
+            <button id="btn" class="btnstyle" onclick="submetquiz()">submet</button>
+            <button id="next-btn"  class="btnstyle" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+    <script src="quiz.js" ></script>
+
+</body>
+</html>

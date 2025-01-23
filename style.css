@@ -1,0 +1,130 @@
+/* body{
+    
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box{
+    width: 40%;
+   
+    display: flex;
+
+    justify-content: center;
+    background-color: blanchedalmond;
+    flex-direction: column;
+    padding: 2rem;
+}
+#option{
+    display: flex;
+    margin-bottom: 1rem;
+   
+}
+#btn{
+    width: 90px;
+    background-color: rgb(89, 234, 32);
+} */
+ /* Gradient background for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Style the quiz box */
+#box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 566px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Style for the question */
+#quebox {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+/* General styling for the options */
+#option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Label styling */
+label {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Styling the radio buttons */
+input[type="radio"] {
+    accent-color: #2575fc;
+    
+}
+
+/* Hover effect */
+#option:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.02);
+}
+
+/* When an option is clicked, change its background color */
+input[type="radio"]:checked + label {
+    background-color: #2575fc;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button styling */
+.btnstyle {
+    background-color: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#btn:hover {
+    background-color: #6a11cb;
+}
+
+/* Style for the ending screen */
+h2, h1 {
+    margin: 0;
+    color: #2575fc;
+}
+
